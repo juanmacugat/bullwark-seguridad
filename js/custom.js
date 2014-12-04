@@ -2,8 +2,10 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $('img[src="' + "img/logo-blanco.png" + '"]').attr('src', "img/logo-negro.png");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $('.container img[src="' + "img/logo-negro.png" + '"]').attr('src', "img/logo-blanco.png");
     }
 });
 
